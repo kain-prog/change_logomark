@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}!{% endblock %}</title>
+        <link rel="icon" href="">
+        {% block stylesheets %}
+        {% endblock %}
+
+        {% block javascripts %}
+        {% endblock %}
+    </head>
+    <body>
+        <style>
+            .example-wrapper { margin: 1em auto; margin-top: 180px; max-width: 600px; width: 100%; font: 18px/1.5 sans-serif; }
+            .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+        </style>
+
+        {% block body %}
+        
+        
+
+        {% endblock %}
+        <div style="max-width: 800px; margin:auto; margin-bottom: 40px; display:flex; justify-content:end;">
+            <a style="margin-right: 20px;" href="{{ path('folder.clean') }}">Limpar arquivos enviados</a>
+            <a href="{{ path('folder.open') }}">Abrir pasta de saída</a>
+        </div>
+    </body>
+</html>

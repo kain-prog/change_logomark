@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DownloadController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; margin-top: 180px; max-width: 600px; width: 100%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper" style="text-align: center;">
+    <h1>Arquivo Finalizado! ✅</h1>
+
+    Faça o download aqui: 
+    
+    <a href="{{ path('download', {'pdfFilePath': pdfPath }) }}">DOWNLOAD PDF</a>
+</div>
+{% endblock %}

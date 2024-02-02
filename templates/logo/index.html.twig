@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Send LogoMark{% endblock %}
+
+{% block body %}
+
+    <div class="example-wrapper" style="max-width: 600px; margin: 180px auto 80px; text-align:center; display: flex; justify-content: center; align-items: center; flex-direction: column">
+        <h1> SEND LOGOMARK </h1>
+
+        <div style="margin-bottom: 50px;">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_end(form) }}
+        </div>
+
+    </div>
+{% endblock %}

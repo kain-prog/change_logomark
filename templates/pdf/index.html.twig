@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Send PDF{% endblock %}
+
+{% block body %}
+
+    <div class="example-wrapper" style="max-width: 600px; margin: auto; margin-top: 147px; text-align:center; display: flex; justify-content: center; align-items: center; flex-direction: column">
+        <h1> SEND PDF </h1>
+
+        <div style="margin-bottom: 100px;">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_end(form) }}
+        </div>
+
+        <div style="display: flex; align-items:center; justify-content: start; width: 100%;">
+            <p style="margin-right: 5px;">Mude a logo</p>
+            <a href="{{ path('logo') }}">clicando aqui</a>
+        </div>
+
+    </div>
+{% endblock %}
